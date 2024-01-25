@@ -1,3 +1,16 @@
+import math
+import torch
+import matplotlib.pyplot as plt
+x = torch.linspace(-math.pi, math.pi, 1000)
+
+y = torch.sin(x)
+
+a = torch.randn(())
+b = torch.randn(())
+c = torch.randn(())
+d = torch.randn(())
+y_random = a * x**3 + b * x**2 + c * x + d
+
 learning_rate = 1e-6
 
 for epoch in range(2000):
